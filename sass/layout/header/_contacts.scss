@@ -1,0 +1,45 @@
+//  contacts
+
+.contacts {
+  @include respond-to(desktop) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  @include respond-to(desktop) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__link {
+  @include respond-to(desktop) {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    color: $secondary-text-color;
+    font-size: 14px;
+    line-height: 1.1;
+
+    transition: color $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $aditional-color;
+    }
+  }
+}
+
+.contacts__icon {
+  @include respond-to(desktop) {
+    @include absolute($t: 0, $l: -20px);
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+      color: $aditional-color;
+    }
+  }
+}

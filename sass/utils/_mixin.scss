@@ -1,0 +1,37 @@
+@mixin absolute($t: false, $r: false, $b: false, $l: false) {
+  position: absolute;
+  @if ($t) {
+    top: $t;
+  }
+  @if ($r) {
+    right: $r;
+  }
+  @if ($b) {
+    bottom: $b;
+  }
+  @if ($l) {
+    left: $l;
+  }
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+//responsive
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

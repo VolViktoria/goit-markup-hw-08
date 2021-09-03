@@ -1,0 +1,26 @@
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+
+  &:checked + .checkbox__icon {
+    border-color: $aditional-color;
+    background-color: $aditional-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.checkbox__icon {
+  border: 2px solid $specific-text-color;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 4px;
+
+  transition: opacity $timing-function;
+}

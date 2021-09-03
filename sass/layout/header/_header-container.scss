@@ -1,0 +1,10 @@
+//  header
+
+.header {
+  border-bottom: 1px solid $light-white-color;
+}
+
+.header__container {
+  @include flex-center;
+  position: relative;
+}

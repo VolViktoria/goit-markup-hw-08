@@ -1,0 +1,14 @@
+.menu-container {
+  display: none;
+  @include absolute($t: 100%, $l: 0);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  height: 400px;
+
+  &.is-open {
+    display: block;
+  }
+}

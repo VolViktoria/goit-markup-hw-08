@@ -1,0 +1,12 @@
+/* body portfolio*/
+/*   Filters   */
+
+.filters__list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}

@@ -1,0 +1,111 @@
+// prime button
+
+.prime-button {
+  color: $main-text-color;
+  font-family: inherit;
+  background-color: $aditional-color;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color $timing-function, box-shadow $timing-function;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $blue-darker-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.prime-button--shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: box-shadow $timing-function;
+
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// secondary button
+
+.secondary-button {
+  display: block;
+  color: $primary-text-color;
+  background-color: $background-extra-color;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+
+  transition: background-color $timing-function, color $timing-function,
+    box-shadow $timing-function;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $main-text-color;
+    background-color: $aditional-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// button close
+
+.button-close {
+  @include absolute($r: 0, $t: 0);
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $main-text-color;
+  cursor: pointer;
+
+  &:focus .icon-close,
+  &:hover .icon-close {
+    fill: $aditional-color;
+  }
+}
+.icon-close {
+  align-self: center;
+  height: 18px;
+  width: 18px;
+
+  transition: fill $timing-function;
+}
+
+//menu-button
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &.is-open .menu-button__icon-cross {
+    display: block;
+  }
+
+  &.is-open .menu-button__icon-menu {
+    display: none;
+  }
+}
+
+.menu-button__icon-cross {
+  display: none;
+}

@@ -1,0 +1,56 @@
+// footer form -subscribe
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe__tittle {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-text-color;
+  margin-bottom: 20px;
+}
+
+.subscribe__form {
+  @include flex-center;
+}
+
+.subscribe__input {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  background-color: inherit;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  padding-left: 15px;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscribe__button {
+  background-color: $aditional-color;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 10px 28px;
+}
+.subscribe__icon {
+  margin-left: 10px;
+}
