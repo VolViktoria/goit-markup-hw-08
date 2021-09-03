@@ -1,0 +1,82 @@
+.menu-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 995;
+  width: 40px;
+  height: 40px;
+  transition: $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.icon-menu,
+.icon-close {
+  transition: fill $timing-function;
+}
+
+.menu-container {
+  background-color: $primary-white-color;
+  z-index: 990;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    transform: translateY(-100%) scale(0.5);
+    transition: translate $timing-function;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(0) scale(1);
+      transition: translate $timing-function;
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    position: relative;
+    display: flex;
+    height: 80px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: static;
+  }
+}

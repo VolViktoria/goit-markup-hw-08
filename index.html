@@ -30,23 +30,22 @@
          <a class="logo link" href="index.html">
             Web<span class="logo__text logo__text--dark">Studio</span>
           </a>
-             <!-- navigation -->
-
-        <nav class="nav">
           <button type="button" 
           class="menu-button is-open" 
           aria-expended="false" 
           aria-controls="menu-container"
           data-menu-button>
             <svg class="" width="40" height="40" aria-label="switcher for mobile menu">
-              <use class="menu-button__icon-cross" href="./images/symbol-defs-2.svg#icon-menu"></use>
-              <use class="menu-button_icon-menu" href="./images/symbol-defs-2.svg#icon-close-black"></use>
+              <use class="icon-cross" href="./images/symbol-defs-2.svg#icon-menu"></use>
+              <use class="icon-menu" href="./images/symbol-defs-2.svg#icon-close-black"></use>
             </svg>
           </button>
-          <div class="menu-container is-open" id="menu-container" data-menu>
-            <div class="menu-container__navigation"></div>
-            <div class="menu-container__contacts"></div>
-          </div>
+
+             <!-- navigation -->
+
+              <div class="menu-container" id="menu-container" data-menu><
+        <nav class="nav">
+          
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link nav__link--current link"
@@ -63,8 +62,7 @@
         </nav>
 
                    <!-- contacts -->
-
-        <ul class="contacts list">
+          <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link link">
               <svg class="contacts__icon">
@@ -82,6 +80,23 @@
             >
           </li>
         </ul>
+         <!-- mobile list-->
+         <ul class="mobile-list list">
+           <li class="mobile-list__item">
+           <a href="#" aria-label="instagram" class="mobile-list__link ">Instagram</a>
+           </li>
+           <li class="mobile-list__item">
+           <a href="#" aria-label="instagram" class="mobile-list__link">Twitter</a>
+           </li>
+           <li class="mobile-list__item">
+           <a href="#" aria-label="instagram" class="mobile-list__link">Facebook</a>
+           </li>
+           <li class="mobile-list__item">
+           <a href="#" aria-label="instagram" class="mobile-list__link">Linkedin</a>
+           </li>
+          </ul>
+      </div>
+
       </div>
     </header>
 
@@ -634,5 +649,20 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+            document
+                .querySelector('.js-speaker-form')
+                .addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+
+                    e.currentTarget.reset();
+                });
+        })();
+    </script>
   </body>
 </html>
