@@ -1,12 +1,13 @@
 // nav menu
 
- .nav {
-//   margin-left: 93px;
-
-   @media screen and(max: width 767px) {
-     display: none;
-/  }
- }
+// .nav {
+//   //   margin-left: 93px;
+// }
+@media screen and(max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
 
 // .nav__list {
 //   display: flex;
