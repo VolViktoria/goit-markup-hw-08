@@ -1,38 +1,38 @@
 // prime button
 
-.prime-button {
-  color: $main-text-color;
-  font-family: inherit;
-  background-color: $aditional-color;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+// .prime-button {
+//   color: $main-text-color;
+//   font-family: inherit;
+//   background-color: $aditional-color;
+//   font-size: 16px;
+//   line-height: 1.9;
+//   letter-spacing: 0.06em;
+//   padding: 10px 32px;
+//   border-radius: 4px;
+//   border: none;
+//   cursor: pointer;
 
-  transition: background-color $timing-function, box-shadow $timing-function;
+//   transition: background-color $timing-function, box-shadow $timing-function;
 
-  &:active,
-  &:hover,
-  &:focus {
-    background-color: $blue-darker-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
+//   &:active,
+//   &:hover,
+//   &:focus {
+//     background-color: $blue-darker-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+// }
 
-.prime-button--shadow {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// .prime-button--shadow {
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: box-shadow $timing-function;
+//   transition: box-shadow $timing-function;
 
-  &:active,
-  &:hover,
-  &:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
+//   &:active,
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+// }
 
 // secondary button
 

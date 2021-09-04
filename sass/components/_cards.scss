@@ -1,39 +1,39 @@
 //    section What we are doing
 
-.cards {
-  @include flex-between;
+// .cards {
+//   @include flex-between;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// }
 
-.cards__list {
-  @include flex-between;
-}
+// .cards__list {
+//   @include flex-between;
+// }
 
-.cards__image {
-  @include flex-between;
-}
+// .cards__image {
+//   @include flex-between;
+// }
 
-.cards__link {
-  position: relative;
-  display: block;
-}
+// .cards__link {
+//   position: relative;
+//   display: block;
+// }
 
-.cards__text {
-  @include absolute($b: 0, $l: 0);
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+// .cards__text {
+//   @include absolute($b: 0, $l: 0);
+//   display: flex;
+//   justify-content: center;
+//   width: 100%;
+//   padding-top: 27px;
+//   padding-bottom: 27px;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
+//   font-weight: bold;
+//   font-size: 14px;
+//   line-height: 16px;
+//   text-transform: uppercase;
 
-  color: $main-text-color;
-  background-color: rgba(47, 48, 58, 0.8);
-}
+//   color: $main-text-color;
+//   background-color: rgba(47, 48, 58, 0.8);
+// }

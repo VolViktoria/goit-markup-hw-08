@@ -1,43 +1,43 @@
 /* backdrop */
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.2);
+//   background-color: rgba(0, 0, 0, 0.2);
 
-  opacity: 1;
-  transition: opacity $timing-function;
+//   opacity: 1;
+//   transition: opacity $timing-function;
 
-  overflow-y: scroll;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+//   overflow-y: scroll;
+// }
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
-.backdrop__modal {
-  position: relative;
-  @include absolute($t: 50%, $l: 50%);
-  width: 528px;
-  min-height: 581px;
-  padding: 40px 40px;
+// .backdrop__modal {
+//   position: relative;
+//   @include absolute($t: 50%, $l: 50%);
+//   width: 528px;
+//   min-height: 581px;
+//   padding: 40px 40px;
 
-  background-color: $main-text-color;
-  opacity: 1;
+//   background-color: $main-text-color;
+//   opacity: 1;
 
-  transform: translate(-50%, -50%);
-}
+//   transform: translate(-50%, -50%);
+// }
 
-.backdrop__title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-bottom: 12px;
-}
+// .backdrop__title {
+//   font-weight: bold;
+//   font-size: 20px;
+//   line-height: 23px;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: $primary-text-color;
+//   margin-bottom: 12px;
+// }
