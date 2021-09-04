@@ -1,9 +1,15 @@
 //prime section
 
-// .prime {
-//   text-align: center;
-// }
-
+.prime {
+  text-align: center;
+}
+.prime__title {
+  color: $main-text-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
 // .prime__title {
 //   color: $main-text-color;
 //   font-weight: 900;
@@ -28,3 +34,18 @@
 
 //   background-repeat: no-repeat;
 // }
+.prime--overlay {
+  padding: 118px 0;
+  width: 480px;
+  height: 400px;
+  margin: 0;
+  background-color: $secondary-background-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-background.jpg);
+
+  background-repeat: no-repeat;
+}
