@@ -29,12 +29,11 @@
 @import "layout/header/nav";
 @import "layout/header/menu-container";
 @import "layout/header/contacts";
+@import "layout/header/menu-container";
+@import "layout/header/mobile-list";
 
 @import "layout/body";
 
 @import "layout/footer/footer-container";
 @import "layout/footer/address";
 @import "layout/footer/subscribe";
-
-@import "components/mobile-menu";
-@import "components/mobile-list";

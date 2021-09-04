@@ -7,6 +7,20 @@
 //   }
 // }
 
+.contacts__link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: $secondary-text-color;
+}
+.contacts__icon {
+  @include absolute($t: 0, $l: 0px);
+
+  &:hover,
+  &:focus {
+    color: $aditional-color;
+  }
+}
 // .contacts__item:not(:last-child) {
 //   @include respond-to(desktop) {
 //     margin-right: 50px;

@@ -3,52 +3,55 @@
 // .social {
 //   margin-left: 70px;
 // }
+.social {
+  margin-left: 122px;
+}
 
-// .social__tittle {
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 16px;
-//   text-transform: uppercase;
-//   margin-bottom: 20px;
-//   text-align: start;
-// }
+.social__tittle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: start;
+}
 
-// .social__list {
-//   @include flex-center;
-//   justify-content: center;
-// }
+.social__list {
+  @include flex-center;
+  justify-content: center;
+}
 
-// .social__item:not(:last-child) {
-//   margin-right: 10px;
-// }
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
 
-// .social__link {
-//   @include flex-center;
-//   justify-content: center;
-//   width: 44px;
-//   height: 44px;
-//   border-radius: 50%;
-//   fill: $main-text-color;
+.social__link {
+  @include flex-center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $main-text-color;
 
-//   transition: background-color $timing-function, fill $timing-function;
+  transition: background-color $timing-function, fill $timing-function;
 
-//   &:hover,
-//   &:focus {
-//     background-color: $aditional-color;
-//     fill: $main-text-color;
-//   }
-// }
+  &:hover,
+  &:focus {
+    background-color: $aditional-color;
+    fill: $main-text-color;
+  }
+}
 
-// .social__icon {
-//   width: 20px;
-//   height: 20px;
-// }
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
 
-// //  team section
-// .social__link--background {
-//   background-color: rgba(255, 255, 255, 0.1);
-// }
-// .social__link--fill {
-//   fill: $accent-color;
-// }
+//  team section
+.social__link--background {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social__link--fill {
+  fill: $accent-color;
+}

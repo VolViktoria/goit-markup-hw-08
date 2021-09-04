@@ -4,24 +4,24 @@
 //   @include flex-between;
 // }
 
-// .clients__link {
-//   display: block;
-//   padding: 16px 32px;
-//   box-sizing: border-box;
-//   border: 1px solid $accent-color;
-//   border-radius: 4px;
-//   fill: $accent-color;
+.clients__link {
+  display: block;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  fill: $accent-color;
 
-//   transition: border-color $timing-function, fill $timing-function;
+  transition: border-color $timing-function, fill $timing-function;
 
-//   &:focus,
-//   &:hover {
-//     border-color: $aditional-color;
-//     fill: $aditional-color;
-//   }
-// }
+  &:focus,
+  &:hover {
+    border-color: $aditional-color;
+    fill: $aditional-color;
+  }
+}
 
-// .clients__icon {
-//   width: 106px;
-//   height: 60px;
-// }
+.clients__icon {
+  width: 106px;
+  height: 60px;
+}
