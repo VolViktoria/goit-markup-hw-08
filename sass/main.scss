@@ -24,15 +24,15 @@
 
 //layout
 
+@import "layout/logo";
+@import "layout/body";
+
 @import "layout/header/header-container";
-@import "layout/header/logo";
 @import "layout/header/nav";
 @import "layout/header/menu-container";
 @import "layout/header/contacts";
 @import "layout/header/menu-container";
 @import "layout/header/mobile-list";
-
-@import "layout/body";
 
 @import "layout/footer/footer-container";
 @import "layout/footer/address";
