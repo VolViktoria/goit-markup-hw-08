@@ -1,9 +1,21 @@
 // nav menu
+
+.nav {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
 .nav__list {
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
 .nav__item {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {

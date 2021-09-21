@@ -17,9 +17,6 @@
 }
 
 .features__description {
-  @media screen and (max-width: 767px) {
-    width: 450px;
-  }
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;

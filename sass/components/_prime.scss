@@ -2,14 +2,6 @@
 
 .prime {
   text-align: center;
-  margin-bottom: 60px;
-}
-.prime__title {
-  color: $main-text-color;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  margin-bottom: 30px;
 }
 .prime__title {
   color: $main-text-color;
@@ -23,7 +15,7 @@
   }
 }
 .prime--overlay {
-  padding: 118px 60px;
+  padding: 118px 0;
   max-width: 1600px;
   height: 400px;
   margin: 0;
