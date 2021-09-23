@@ -1,31 +1,9 @@
-.menu-toggle {
-  display: flex;
-  margin-left: auto;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  color: $specific-text-color;
-  z-index: 995;
-
-  transition: fill $timing-function;
-
-  &:hover,
-  &:focus {
-    fill: $aditional-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
 .menu-container {
   background-color: $main-text-color;
   transition: transform $timing-function;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,14 +25,4 @@
     align-items: center;
     width: 100%;
   }
-}
-.icon-menu {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.icon-cros {
-  position: absolute;
-  top: 10px;
-  right: 15px;
 }

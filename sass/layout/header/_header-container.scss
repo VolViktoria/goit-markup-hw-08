@@ -2,17 +2,10 @@
 
 .header {
   border-bottom: 1px solid $light-white-color;
-
-  @media screen and (max-width: 767px) {
-    height: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 80px;
-  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }

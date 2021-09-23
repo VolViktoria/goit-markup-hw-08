@@ -2,7 +2,9 @@
   background-color: $secondary-background-color;
   color: $main-text-color;
   padding: 60px 0;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__container {
