@@ -34,34 +34,6 @@
   }
 }
 
-// secondary button
-
-.secondary-button {
-  display: block;
-  color: $primary-text-color;
-  background-color: $background-extra-color;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.6;
-
-  border-color: transparent;
-  border-radius: 4px;
-  padding: 6px 22px;
-  cursor: pointer;
-
-  transition: background-color $timing-function, color $timing-function,
-    box-shadow $timing-function;
-
-  &:active,
-  &:hover,
-  &:focus {
-    color: $main-text-color;
-    background-color: $aditional-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-
 // button close
 
 .button-close {
@@ -114,4 +86,32 @@
   position: fixed;
   top: 10px;
   right: 15px;
+}
+
+// secondary button/ Portfolio page
+
+.secondary-button {
+  display: block;
+  color: $primary-text-color;
+  background-color: $background-extra-color;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+
+  transition: background-color $timing-function, color $timing-function,
+    box-shadow $timing-function;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $main-text-color;
+    background-color: $aditional-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
