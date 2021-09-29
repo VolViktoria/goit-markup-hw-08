@@ -887,11 +887,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .projects {
     margin: -15px;
   }
 }
