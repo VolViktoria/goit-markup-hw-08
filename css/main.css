@@ -250,7 +250,6 @@ img {
   top: 50%;
   left: 50%;
   width: 450px;
-  min-height: 609px;
   padding: 40px 40px;
   background-color: #ffffff;
   opacity: 1;
@@ -303,13 +302,7 @@ img {
 
 /* form */
 .form {
-  width: 320px;
-}
-
-@media screen and (min-width: 468px) {
-  .form {
-    width: 370px;
-  }
+  width: 370px;
 }
 
 @media screen and (min-width: 1200px) {
