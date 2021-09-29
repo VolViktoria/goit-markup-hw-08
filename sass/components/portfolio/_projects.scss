@@ -71,6 +71,7 @@
   letter-spacing: 0.03em;
   padding: 63px 24px 53px 24px;
   color: $main-text-color;
+  overflow-y: auto;
 
   transform: translateY(101%);
   transition: transform $timing-function;
