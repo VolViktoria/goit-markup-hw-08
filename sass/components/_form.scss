@@ -1,8 +1,10 @@
 /* form */
 
 .form {
-  width: 370px;
-
+  width: 300px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -32,7 +34,7 @@
 .form__input {
   display: block;
   border-color: $light-grey-color;
-  width: 370px;
+  width: 250px;
   height: 40px;
   border-radius: 4px;
   padding: 0 0 0 35px;
@@ -50,7 +52,9 @@
   &:hover + .modal__icon {
     fill: $aditional-color;
   }
-
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -71,7 +75,7 @@
 .form__textarea {
   border-color: $light-grey-color;
   resize: none;
-  width: 370px;
+  width: 250px;
   height: 120px;
   padding: 12px 16px;
   border-radius: 4px;
@@ -92,7 +96,9 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
